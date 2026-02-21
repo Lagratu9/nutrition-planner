@@ -376,18 +376,18 @@ export default function NutritionPlanner() {
         background:"linear-gradient(135deg, #2D4739 0%, #1B6B3A 50%, #2D7D46 100%)",
         color:"#fff", padding:"24px 20px 16px", position:"relative", overflow:"hidden"
       }}>
-        <div style={{ position:"absolute", top:-20, right:-20, fontSize:120, opacity:0.06 }}>🩺</div>
+        <div style={{ position:"absolute", top:-20, right:-20, fontSize:120, opacity:0.06 }}>🥗</div>
         <h1 style={{ margin:0, fontSize:20, fontWeight:800, letterSpacing:0.5 }}>
-          DR. NUTRITIA — Plan Nutritionnel Personnalisé
+          Plan Nutritionnel Personnalisé
         </h1>
         <p style={{ margin:"4px 0 0", fontSize:12, opacity:0.85 }}>
-          Greffé rénal · Résistant à l'insuline · Low-FODMAP · 2 150 kcal/jour
+          Résistant à l'insuline · Low-FODMAP · 2 150 kcal/jour
         </p>
         <div style={{
           display:"flex", flexWrap:"wrap", gap:6, marginTop:10
         }}>
           {[
-            "🚫 Pamplemousse", "🚫 Alcool", "🚫 Industriel",
+            "🚫 Pamplemousse", "🚫 Industriel",
             "⬇️ K < 2500mg/j", "⬇️ P < 1000mg/j", "⬇️ IG bas"
           ].map(tag => (
             <span key={tag} style={{
@@ -543,17 +543,7 @@ export default function NutritionPlanner() {
       </div>
 
       {/* Footer */}
-      <div style={{
-        padding:"12px 16px 30px", textAlign:"center", fontSize:11, color:"#999", lineHeight:1.6
-      }}>
-        <p style={{ margin:0 }}>
-          ⚠️ <strong>Avertissement médical :</strong> Ce plan est un outil d'aide. Il ne remplace pas le suivi par votre néphrologue et diététicien(ne).
-          Tout changement alimentaire significatif doit être validé par votre équipe médicale.
-        </p>
-        <p style={{ margin:"6px 0 0", opacity:0.7 }}>
-          Sources : KDOQI 2020 · KDIGO 2024 · Monash University FODMAP · USDA FoodData Central · RCP EMA
-        </p>
-      </div>
+      <div style={{ padding:"12px 16px 30px" }} />
     </div>
   );
 }
